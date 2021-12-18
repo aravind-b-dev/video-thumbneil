@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Video Thumbnail',
       home:  MyHomePage(),
     );
   }
@@ -57,7 +57,6 @@ class _MyHomePageState extends State<MyHomePage> {
         )
     );
 
-   // String url = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4";
     _betterPlayerDataSource = BetterPlayerDataSource(
         BetterPlayerDataSourceType.network,
         url
@@ -79,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.teal.shade400,
       appBar: AppBar(
         backgroundColor: Colors.transparent.withAlpha(20),
-        title: const Text("Video Compress"),
+        title: const Text("Video Thumbnail"),
         centerTitle: true,
         actions: [
           Lottie.network(
@@ -112,8 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Color(0xff5cafaf)),
               margin:  const EdgeInsets.symmetric(horizontal: 10),
               padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
-              // height: MediaQuery.of(context).size.height *.3,
-              // width: MediaQuery.of(context).size.width,
+
               child: ClipRRect(
                 borderRadius:
                 BorderRadius.circular(10),
