@@ -2,6 +2,7 @@
 
 An app that generate thumbnail from a video url
 
+
 Demo video
 
 https://user-images.githubusercontent.com/73890321/146633445-7363f8b2-52f7-4c35-aa4f-3f30fea72b08.mp4
